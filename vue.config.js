@@ -10,6 +10,7 @@ const urlConfig = {
 
 const vueConfig = {
   css: {
+    // 将 css 内联打包
     extract: false,
     loaderOptions: {
       less: {

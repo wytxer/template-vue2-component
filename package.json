@@ -6,7 +6,7 @@
     "dev": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "dev:lib": "vue-cli-service build --target lib --name ComponentName --filename component-name --dest lib src/components/index.js --watch",
-    "build:lib": "vue-cli-service build --target lib --name ComponentName --filename component-name --dest lib src/components/index.js --inline-vue",
+    "build:lib": "vue-cli-service build --target lib --name ComponentName --filename component-name --dest lib src/components/index.js",
     "lint": "vue-cli-service lint"
   },
   "main": "lib/component-name.umd.min.js",
