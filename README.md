@@ -5,30 +5,21 @@
 
 ## 快速使用
 
-### 安装
-
 ```bash
-# npm
-npm i
-
-# yarn
+# 安装
 yarn install
-```
 
-### 使用
-
-```bash
 # 开发
-npm run dev
+yarn run dev
 
 # 打包
-npm run build
+yarn run build
 
 # 开发组件
-npm run dev:lib
+yarn run dev:lib
 
 # 打包组件
-npm run build:lib
+yarn run build:lib
 ```
 
 

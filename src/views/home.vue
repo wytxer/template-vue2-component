@@ -1,5 +1,5 @@
 <template>
-  <div class="home-view">
+  <div class="page-home">
     <layout-box title="Card" description="基于业务定制的卡片容器。">
       <component-name />
     </layout-box>
