@@ -3,6 +3,7 @@ import { Modal, message, notification, Button } from 'ant-design-vue'
 import App from '@/app.vue'
 import router from '@/router'
 import LayoutBox from '@/components/layout-box'
+import ComponentName from '@/components'
 
 import './app.less'
 import '@wytxer/style-utils/lib/common.less'
@@ -19,6 +20,7 @@ Vue.prototype.$warning = Modal.warning
 
 Vue.use(Button)
 Vue.use(LayoutBox)
+Vue.use(ComponentName)
 
 new Vue({
   router,
