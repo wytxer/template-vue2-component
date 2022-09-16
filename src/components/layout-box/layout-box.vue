@@ -1,12 +1,12 @@
 <template>
-  <div class="layout-box-wrap">
-    <div v-if="title" class="title">
+  <div class="layout-box">
+    <div v-if="title" class="layout-box__title">
       {{ title }}
     </div>
-    <div v-if="description" class="description">
+    <div v-if="description" class="layout-box__description">
       {{ description }}
     </div>
-    <div class="card-content">
+    <div class="layout-box__body">
       <slot></slot>
     </div>
   </div>
@@ -29,20 +29,20 @@ export default {
 </script>
 
 <style lang="less" scoped>
-.layout-box-wrap {
+.layout-box {
   margin-bottom: 32px;
   padding: 24px;
   box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.1);
-  .title {
+  &__title {
     color: rgba(0, 0, 0, 0.85);
     font-size: 18px;
     padding-bottom: 8px;
   }
-  .description {
+  &__description {
     color: #5e6d82;
     padding-bottom: 8px;
   }
-  .card-content {
+  &__body {
     padding-top: 16px;
   }
 }

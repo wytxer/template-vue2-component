@@ -1,10 +1,10 @@
 <template>
-  <div class="component-name-wrap">
-    <div class="name">
-      <img src="./icon.svg" alt="Icon" />
+  <div class="component-name">
+    <div class="component-name__header">
+      <img src="./icon.svg" alt="Icon" class="component-name__img" />
       <span>{{ name }}</span>
     </div>
-    <div class="time">
+    <div class="component-name__time">
       时间：
       {{ new Date().getFullYear() }}
     </div>
@@ -24,7 +24,7 @@ export default {
 </script>
 
 <style lang="less" scoped>
-.component-name-wrap {
+.component-name {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -37,19 +37,18 @@ export default {
   border-radius: 10px;
   margin-right: 16px;
   box-shadow: 2px 2px 8px #d9d9d9;
-
-  .name {
+  &__header {
     font-size: 20px;
     color: #158dff;
     display: flex;
     align-items: center;
-    img {
-      width: 24px;
-      vertical-align: middle;
-      margin-right: 10px;
-    }
   }
-  .time {
+  &__img {
+    width: 24px;
+    vertical-align: middle;
+    margin-right: 10px;
+  }
+  &__time {
     position: absolute;
     bottom: 8px;
     right: 8px;
